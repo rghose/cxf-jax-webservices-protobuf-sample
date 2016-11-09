@@ -8,5 +8,5 @@ import javax.jws.WebService;
 @WebService(name="trips", targetNamespace="http://api.cashiering.flywheel.com/" )
 public interface FlywheelTrips {
 	@WebMethod
-	Trip[] getTrips(@WebParam(name="id") int id);
+	Trip getTrips(@WebParam(name="id") int id);
 }

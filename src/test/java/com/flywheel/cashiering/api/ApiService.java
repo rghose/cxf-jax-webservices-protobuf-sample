@@ -7,8 +7,9 @@ import org.apache.cxf.jaxws.JaxWsClientFactoryBean;
 import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
 import org.apache.cxf.jaxws.JaxWsServerFactoryBean;
 
-import com.flywheel.cashiering.api.FlywheelTrips;
 import com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+
+import com.flywheel.cashiering.api.FlywheelTrips;
 
 
 public class ApiService extends TestCase {
@@ -29,9 +30,9 @@ public class ApiService extends TestCase {
 	    return (FlywheelTrips) factory.create();
 	}
 	
-	public void testService() throws ParseException {  
+	public void testService() throws ParseException {
 		FlywheelTrips ft=newFlywheelTripsRequest();
-		Trip []results = ft.getTrips(1);
-	    assertEquals(0, results.length);
+		Trip results = ft.getTrips(1);
+	    assertEquals(1, results.getId());
 	}
 }
