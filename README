@@ -1,0 +1,7 @@
+JAVA JAX Webservice with Protobuf support in Maven
+
+Create war:
+* mvn clean install
+
+Tests:
+* mvn test
