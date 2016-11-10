@@ -1,7 +1,18 @@
-JAVA JAX Webservice with Protobuf support in Maven
+JAVA JAX Webservice with Protobuf support using Maven
+
+Config:
+
+1. Place "configs.prop" in your $CATALINA_HOME/conf folder.
+2. Update the value of "url_get_trips" with the URL where Abe is running. Note that the url must end with a "/" (without quotes).
 
 Create war:
 * mvn clean install
 
 Tests:
 * mvn test
+
+Tested on:
+
+1. Apache tomcat 1.8
+2. Java 1.8
+

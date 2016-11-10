@@ -19,10 +19,10 @@
 </properties>
 
   <groupId>com.flywheel</groupId>
-  <artifactId>ApiCashiering</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <artifactId>SoapApi</artifactId>
+  <version>1.0</version>
   <packaging>war</packaging>
-  <name>ApiCashiering</name>
+  <name>SoapApi</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
